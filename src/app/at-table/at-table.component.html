@@ -1,0 +1,19 @@
+
+<button mat-raised-button (click)="onExport()">Esporta in Excel</button>
+
+<div class="mat-elevation-z2">
+  <table mat-table [dataSource]="dataSource" matSort class="at-table">
+
+    <ng-container *ngFor="let disCol of displayedColumns; let colIndex = index" matColumnDef="{{disCol}}">
+      <mat-header-cell *matHeaderCellDef mat-sort-header>{{disCol}}</mat-header-cell>
+      <mat-cell *matCellDef="let element "> {{element[disCol]}}
+      </mat-cell>
+    </ng-container>
+
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+  </table>
+
+  <mat-paginator [pageSize]="100" [pageSizeOptions]="[5, 10, 20, 50, 100]" showFirstLastButtons></mat-paginator>
+</div>
+
