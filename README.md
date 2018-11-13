@@ -29,7 +29,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## This is my first attempt to create an client to API services of Painting-Pedia database done with Airtable, available here []
 npm install -g angular-cli-ghpages
 ng build --prod --base-href https://xcesco.github.io/ng-painting-pedia/
-ngh --repo= https://xcesco:password@github.com/xcesco/ng-painting-pedia.git
+ngh --no-silent --repo= https://xxx:yyy@github.com/xcesco/ng-painting-pedia.git
 
 https://medium.com/@madhavmahesh/exporting-an-excel-file-in-angular-927756ac9857
 https://www.infragistics.com/community/blogs/b/infragistics/posts/how-to-deploy-an-angular-application-to-github
+https://xcesco.github.io/ng-painting-pedia/
