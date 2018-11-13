@@ -7,7 +7,9 @@ import * as FileSaver from 'file-saver';
 import * as XLSX from 'xlsx';
 
 const EXCEL_TYPE = 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;charset=UTF-8';
+const JSON_TYPE = 'application/json;charset=UTF-8';
 const EXCEL_EXTENSION = '.xlsx';
+const JSON_EXTENSION = '.json';
 
 @Component({
   selector: 'app-at-table',
@@ -37,12 +39,12 @@ export class AtTableComponent implements OnInit, AfterViewInit {
     const worksheet: XLSX.WorkSheet = XLSX.utils.json_to_sheet(json);
     const workbook: XLSX.WorkBook = {Sheets: {'data': worksheet}, SheetNames: ['data']};
     const excelBuffer: any = XLSX.write(workbook, {bookType: 'xlsx', type: 'array'});
-    this.saveAsExcelFile(excelBuffer, excelFileName);
+    this.saveAsFile(excelBuffer, excelFileName);
   }
 
-  private saveAsExcelFile(buffer: any, fileName: string): void {
-    const data: Blob = new Blob([buffer], {type: EXCEL_TYPE});
-    FileSaver.saveAs(data, fileName + '_export_' + new Date().getTime() + EXCEL_EXTENSION);
+  private saveAsFile(buffer: any, fileName: string, type: string = EXCEL_TYPE): void {
+    const data: Blob = new Blob([buffer], {type: type});
+    FileSaver.saveAs(data, fileName + '_export_' + new Date().getTime() + type);
   }
 
   onClick(): void {
@@ -88,7 +90,11 @@ export class AtTableComponent implements OnInit, AfterViewInit {
     this.onClick();
   }
 
-  onExport() {
+  onExportXls() {
     this.exportAsExcelFile(this.dataSource.data, 'sample');
+  }
+
+  onExportJson() {
+    this.saveAsFile(JSON.stringify(this.dataSource.data), 'sample', JSON_TYPE);
   }
 }
