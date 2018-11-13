@@ -1,4 +1,4 @@
-# Biblio
+# ng-painting-pedia
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.5.
 
@@ -25,3 +25,11 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## This is my first attempt to create an client to API services of Painting-Pedia database done with Airtable, available here []
+npm install -g angular-cli-ghpages
+ng build --prod --base-href https://xcesco.github.io/ng-painting-pedia/
+ngh --repo= https://xcesco:password@github.com/xcesco/ng-painting-pedia.git
+
+https://medium.com/@madhavmahesh/exporting-an-excel-file-in-angular-927756ac9857
+https://www.infragistics.com/community/blogs/b/infragistics/posts/how-to-deploy-an-angular-application-to-github
