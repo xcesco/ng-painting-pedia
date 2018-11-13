@@ -34,6 +34,7 @@ npm install -g angular-cli-ghpages
 ng build --prod --base-href https://xcesco.github.io/ng-painting-pedia/
 git remote set-url origin git@github.com:username/repo.git
 ngh --no-silent --repo= https://xxx:yyy@github.com/xcesco/ng-painting-pedia.git
+https://xcesco.github.io/ng-painting-pedia/
 
 
 https://medium.com/@madhavmahesh/exporting-an-excel-file-in-angular-927756ac9857

@@ -6,7 +6,9 @@ import {AppComponent} from './app.component';
 import {
   MatButtonModule,
   MatCheckboxModule,
+  MatIconModule, MatListModule,
   MatPaginatorModule,
+  MatSidenavModule,
   MatSortModule,
   MatTableModule,
   MatTabsModule,
@@ -15,7 +17,8 @@ import {
 import {HttpClientModule} from '@angular/common/http';
 import {httpInterceptorProviders} from './interceptors';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import { AtTableComponent } from './at-table/at-table.component';
+import {AtTableComponent} from './at-table/at-table.component';
+import {FlexLayoutModule} from '@angular/flex-layout';
 
 // import {NgxAirtableModule} from 'ngx-airtable/src/ngx-airtable.module';
 
@@ -37,7 +40,7 @@ import { AtTableComponent } from './at-table/at-table.component';
 
     AppRoutingModule,
     // NgxAirtableModule.forRoot({apiKey: 'keyeA6BKZ22n3MZzd'}),
-    MatButtonModule, MatCheckboxModule, MatTableModule, MatPaginatorModule, MatSortModule, MatToolbarModule, MatTabsModule
+    MatButtonModule, MatCheckboxModule, MatTableModule, MatPaginatorModule, MatSortModule, MatToolbarModule, MatTabsModule, MatSidenavModule, MatIconModule, FlexLayoutModule, MatListModule
   ],
   providers: [httpInterceptorProviders],
   bootstrap: [AppComponent]

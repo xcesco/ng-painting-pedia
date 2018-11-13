@@ -8,6 +8,7 @@ import * as XLSX from 'xlsx';
 
 const EXCEL_TYPE = 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;charset=UTF-8';
 const JSON_TYPE = 'application/json;charset=UTF-8';
+
 const EXCEL_EXTENSION = '.xlsx';
 const JSON_EXTENSION = '.json';
 
@@ -39,12 +40,12 @@ export class AtTableComponent implements OnInit, AfterViewInit {
     const worksheet: XLSX.WorkSheet = XLSX.utils.json_to_sheet(json);
     const workbook: XLSX.WorkBook = {Sheets: {'data': worksheet}, SheetNames: ['data']};
     const excelBuffer: any = XLSX.write(workbook, {bookType: 'xlsx', type: 'array'});
-    this.saveAsFile(excelBuffer, excelFileName);
+    this.saveAsFile(excelBuffer, excelFileName + '.' + EXCEL_EXTENSION);
   }
 
   private saveAsFile(buffer: any, fileName: string, type: string = EXCEL_TYPE): void {
     const data: Blob = new Blob([buffer], {type: type});
-    FileSaver.saveAs(data, fileName + '_export_' + new Date().getTime() + type);
+    FileSaver.saveAs(data, 'export_' + new Date().getTime() + fileName);
   }
 
   onClick(): void {
@@ -95,6 +96,6 @@ export class AtTableComponent implements OnInit, AfterViewInit {
   }
 
   onExportJson() {
-    this.saveAsFile(JSON.stringify(this.dataSource.data), 'sample', JSON_TYPE);
+    this.saveAsFile(JSON.stringify(this.dataSource.data), 'sample' + '.' + JSON_EXTENSION, JSON_TYPE);
   }
 }
