@@ -1,1 +1,56 @@
-/* You can add global styles to this file, and also import other style files */
+/*
+Error: File to import not found or unreadable: ~@angular/material/theming.
+        on line 1 of styles.scss
+
+1: @import '~@angular/material/theming';
+2: // Plus imports for other components in your app.
+3: 
+4: // Include the common styles for Angular Material. We include this here so that you only
+5: // have to load a single css file for Angular Material in your app.
+6: // Be sure that you only ever include this mixin once!
+
+Backtrace:
+styles.scss:1
+C:/MyProgramFiles/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/import_node.rb:67:in `rescue in import'
+C:/MyProgramFiles/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/import_node.rb:45:in `import'
+C:/MyProgramFiles/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/import_node.rb:28:in `imported_file'
+C:/MyProgramFiles/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/import_node.rb:37:in `css_import?'
+C:/MyProgramFiles/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:314:in `visit_import'
+C:/MyProgramFiles/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/MyProgramFiles/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/MyProgramFiles/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/stack.rb:79:in `block in with_base'
+C:/MyProgramFiles/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/stack.rb:135:in `with_frame'
+C:/MyProgramFiles/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/stack.rb:79:in `with_base'
+C:/MyProgramFiles/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/MyProgramFiles/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/MyProgramFiles/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/MyProgramFiles/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/MyProgramFiles/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+C:/MyProgramFiles/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/MyProgramFiles/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+C:/MyProgramFiles/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/MyProgramFiles/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+C:/MyProgramFiles/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/MyProgramFiles/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:161:in `visit'
+C:/MyProgramFiles/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:10:in `visit'
+C:/MyProgramFiles/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/MyProgramFiles/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+C:/MyProgramFiles/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+C:/MyProgramFiles/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/engine.rb:307:in `render_with_sourcemap'
+C:/MyProgramFiles/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+C:/MyProgramFiles/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/MyProgramFiles/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:209:in `each'
+C:/MyProgramFiles/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/MyProgramFiles/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/plugin.rb:82:in `update_stylesheets'
+C:/MyProgramFiles/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/exec/sass_scss.rb:340:in `watch_or_update'
+C:/MyProgramFiles/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/exec/sass_scss.rb:51:in `process_result'
+C:/MyProgramFiles/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/exec/base.rb:52:in `parse'
+C:/MyProgramFiles/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/exec/base.rb:19:in `parse!'
+C:/MyProgramFiles/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.1/bin/scss:13:in `<top (required)>'
+C:/MyProgramFiles/Ruby23-x64/bin/scss:22:in `load'
+C:/MyProgramFiles/Ruby23-x64/bin/scss:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: ~@angular/material/theming.\A         on line 1 of styles.scss\A \A 1: @import '~@angular/material/theming';\A 2: // Plus imports for other components in your app.\A 3: \A 4: // Include the common styles for Angular Material. We include this here so that you only\A 5: // have to load a single css file for Angular Material in your app.\A 6: // Be sure that you only ever include this mixin once!"; }
